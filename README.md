@@ -11,7 +11,7 @@ There are 3 main routers :
 3. Get Product (Get all product, Get by product name, Get by quantity)
 
 ## Notes :
-1. I'am using UUID for cart_id, don't forget to create extenxion in SQL console after create the database with this query below :
+1. I'am using UUID for cart_id, don't forget to create extenxions in SQL console after create the database with this query below :
 ```bash
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
@@ -42,7 +42,7 @@ https://github.com/adiet95/go-cart.git
 ```bash
 go mod tidy
 ```
-> Wait a minute, if still error run 
+> Wait a minute, if still error run :
 
 ```bash
 go mod vendor
@@ -78,10 +78,7 @@ go run . serve
 
 ### GET /cart
 > Get Data Cart
-_Request Header_
-```
-not needed
-```
+
 _Request Body_
 ```
 not needed
@@ -93,10 +90,7 @@ not needed
 
 ### POST /cart
 > Post Data Cart
-_Request Header_
-```
-not needed
-```
+
 _Request Body_
 ```
 {
@@ -112,53 +106,40 @@ no need
 
 ### DELETE /cart
 > Delete Data Cart by Product Code
-_Request Header_
-```
-not needed
-```
+
 _Request Body_
 ```
 no need
 ```
 _Request Query Params_
 ```
-code = (Delete by product code)
+code = (input product code)
 ```
 
 ### GET /cart/name
 
 > Search Data Cart by product name
 
-_Request Header_
-```
-not needed
-```
-
 _Request Body_
 ```
 no need
 ```
 _Request Query Params_
 ```
-name = (Get detail data by product name)
+name = (input product name)
 ```
 
 ### GET /cart/qty
 
 > Search Data Cart by quantity
 
-_Request Header_
-```
-not needed
-```
-
 _Request Body_
 ```
 no need
 ```
 _Request Query Params_
 ```
-qty = (Search data by quantity)
+qty = (input quantity)
 ```
 
 ## 💻 Built with
