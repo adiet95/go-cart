@@ -3,7 +3,7 @@ Mini Service Shopping Cart with Gin-Gonic HTTP Respons Framework, GORM for Objec
 
 ## 🔗 Description
 
-This Backend Service Shopping Cart is used for simple order product.
+This Backend Service Shopping Cart is used for simple add product to cart.
 There are 3 main routers :
 1. Add Cart (Can add product if product is no exist also update quantity product if name product exist)
 > Attributes ProductCode, ProductName, Quantity
